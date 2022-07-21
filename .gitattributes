@@ -1,9 +1,14 @@
-void setup() {
-    pinMode(LED_BUILTIN, OUTPUT);
-}
-void loop(){
-    digitalWrite(LED_BUILTIN, HIGH);
-    delay(1000);
-    digitalWrite(LED_BUILTIN, LOW);
-    delay(1000);
-}
+Write steps to run esp32
+1) download Arduino IDE
+2) open Arduino IDE
+Go to file >> preferences on Arduino IDE
+Copy text :https://dl.espressif.com/dl/package_esp32_index.json
+Paste the copied text into the Additional Board Manager URLS. Then, click the OK button
+3) Open the Boards Manager by going to Tools » Board of Directors » Boards Manager
+Type “esp32,” then click the “ESP32 by Espressif Systems” install button.
+The software installation is done
+Connect the ESP32 board
+1)Select ESP32 board to USB
+Tools>>Board"Arduino Uno">>ESP32 Arduino>> Dev module
+2)select serial port
+Tools>>port"COM3">>COM3
